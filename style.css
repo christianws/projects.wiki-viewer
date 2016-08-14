@@ -1,0 +1,206 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+body{
+background:#F7FAFF;
+font-family: 'Arbutus Slab', serif;
+}
+html {
+  overflow-y: scroll;
+}
+
+.left-column{
+  position: absolute;
+  display:inline-block;
+  width:15%;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+ 
+  top:50%;
+   transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+
+}
+.right-column{
+  
+  float:right;
+  width:85%;
+
+
+}
+.inner{
+  margin:4%;
+}
+.search-con_nosearch{
+  position:relative;
+  text-align: center; 
+
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: white;
+  overflow: hidden;
+  width:400px;
+  overflow: hidden;
+  box-shadow: 0 3px 6px rgba(0,0,0,.16),0 3px 6px rgba(0,0,0,.23);
+}
+.search-con{
+  position:relative;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  background-color: white;
+  overflow: hidden;
+  width:400px;
+  box-shadow: 0 3px 6px rgba(0,0,0,.16),0 3px 6px rgba(0,0,0,.23);
+
+  
+}
+
+#content-con{
+  margin-top:15px;
+  margin-left: auto;
+  margin-right:auto;
+  box-shadow: 0 3px 6px rgba(0,0,0,.16),0 3px 6px rgba(0,0,0,.23);
+
+  border-radius: 10px;
+  background-color: white;
+  overflow: hidden;
+  width:900px;
+ 
+  display:none;
+}
+#content-con_inner{
+  position:relative;
+  margin:60px;
+
+}
+.wiki-result_con{
+  position:relative;
+ 
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.wiki-result_title{
+  position:relative;
+  font-weight: bold;
+  margin-bottom:10px;
+
+ 
+  overflow:hidden;
+}
+.wiki-result_extract{
+  position:relative;
+  margin-bottom: 10px;
+ 
+
+  overflow:hidden;
+}
+.wiki-result_thumbnail{
+  position:relative;
+
+  width:100%;
+  float:left;
+}
+.wiki-img{
+  position:relative;
+
+  
+  width:100%;
+
+  float:left;
+}
+
+
+/* SEARCH */
+#loading_gif{
+  margin-left: auto;
+  margin-right:auto;
+  
+   display:table;
+   height:60px;
+   margin-bottom:16px;
+
+}
+
+#search-form input[type=search] {
+
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+  display: none; 
+}
+input[type=search]{
+
+  width:50px;
+  outline:none;
+
+
+}
+
+#search input[type=search] {
+
+  background: url(https://cdn0.iconfinder.com/data/icons/glyph_set/128/search.png) no-repeat center;
+  background-size: 56px;
+  color:transparent;
+  width:60px;
+  height:60px;
+  border: solid 1px black;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+  cursor: pointer;
+  font-size: 120%;
+  
+}
+#search input[type=search]:hover{
+  background-color: lightblue;
+}
+#search input[type=search]:focus{
+  border-color: orange;
+  color: #000;
+  background-color: #fff;
+  background-position: left;
+  cursor: auto;
+  width:300px;
+  padding-left:60px;
+
+
+}
+#search input:-moz-placeholder {
+  color: transparent;
+}
+#search input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+/* ------ RANDOM BUTTON ------ */
+
+.random-button{
+  outline:none;
+  cursor:pointer;
+  border:none;
+  background-color: transparent;
+  font-size: 100%;
+  display:block;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  text-decoration: none;
+  color:black;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  transition: all .2s;
+}
+.random-button:hover{
+  color:blue;
+}
+.error{
+  color:red;
+}
